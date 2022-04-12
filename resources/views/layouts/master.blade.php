@@ -7,7 +7,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <title>
-    Guest Books
+    Guest Books | {{$title}}
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -53,7 +53,7 @@
           <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
             <span class="text-lg fab fa-pinterest"></span>
           </a>
-          <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
+          <a href="javascript:;" target="_blank" class="text-secondary">
             <span class="text-lg fab fa-github"></span>
           </a>
         </div>
@@ -63,7 +63,7 @@
           <p class="mb-0 text-secondary">
             Copyright © <script>
               document.write(new Date().getFullYear())
-            </script> Soft by Creative Tim.
+            </script> Developed By <a href="https://qkohst.github.io/" target="_black">Qkoh St</a>
           </p>
         </div>
       </div>
@@ -72,6 +72,7 @@
   <!-- End Footer  -->
 
   <!--   Core JS Files   -->
+
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap.min.js"></script>
   <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>

@@ -13,7 +13,7 @@
                     <h6 class="mb-0">GuestBook List</h6>
                   </div>
                   <div class="col-6 text-end">
-                    <button class="btn btn-outline-primary btn-sm mb-0">Add New Guest Book</button>
+                    <a href="/create" class="btn btn-outline-primary btn-sm mb-0">Add New Guest Book</a>
                   </div>
                 </div>
               </div>
@@ -33,52 +33,19 @@
                       </tr>
                     </thead>
                     <tbody>
+                      <?php $no = 0; ?>
+                      @foreach($guest_books as $guest_book)
+                      <?php $no++; ?>
                       <tr>
-                        <td>
-                          1
-                        </td>
-                        <td>
-                          Kukoh
-                        </td>
-                        <td>
-                          Santoso
-                        </td>
-                        <td>
-                          Coba voajahsahsasjas
-                        </td>
-                        <td>
-                          Tambakboyo
-                        </td>
-                        <td>
-                          Jawa Timur
-                        </td>
-                        <td>
-                          Jawa Timur
-                        </td>
+                        <td>{{$no}}</td>
+                        <td>{{$guest_book->first_name}}</td>
+                        <td>{{$guest_book->last_name}}</td>
+                        <td>{{$guest_book->organization}}</td>
+                        <td>{{$guest_book->address}}</td>
+                        <td>{{$guest_book->provinces->name}}</td>
+                        <td>{{$guest_book->cities->name}}</td>
                       </tr>
-                      <tr>
-                        <td>
-                          1
-                        </td>
-                        <td>
-                          Kukoh
-                        </td>
-                        <td>
-                          Santoso
-                        </td>
-                        <td>
-                          Coba voajahsahsasjas
-                        </td>
-                        <td>
-                          Tambakboyo
-                        </td>
-                        <td>
-                          Jawa Timur
-                        </td>
-                        <td>
-                          Jawa Timur
-                        </td>
-                      </tr>
+                      @endforeach
                     </tbody>
                   </table>
                 </div>
