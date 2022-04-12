@@ -14,12 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource('/', 'HomeController');
-Route::get('/city/{code}', 'GetCityController@city');
+Route::resource('/', 'HomeController',  [
+    'uses' => ['index', 'create', 'store']
+]);
+Route::get('login', 'AuthController@login_page')->name('login');
+Route::post('login', 'AuthController@login_post')->name('login');
+Route::get('city/{code}', 'GetCityController@city');
 
-Route::get('/login', function () {
-    return view('auth.login');
-});
-Route::get('/register', function () {
-    return view('auth.register');
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('logout', 'AuthController@logout')->name('logout');
+    Route::get('dashboard', 'DashboardController@index')->name('dashboard');
 });

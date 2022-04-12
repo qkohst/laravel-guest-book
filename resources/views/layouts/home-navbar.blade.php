@@ -14,13 +14,13 @@
          <div class="collapse navbar-collapse justify-content-end" id="navigation">
              <ul class="navbar-nav">
                  <li class="nav-item">
-                     <a class="nav-link" href="/register">
-                         <i class="fas fa-user-circle opacity-6 text-dark me-1"></i>
-                         Register
+                     <a class="nav-link" href="/">
+                         <i class="fas fa-home opacity-6 text-dark me-1"></i>
+                         Home
                      </a>
                  </li>
                  <li class="nav-item">
-                     <a class="nav-link" href="/login">
+                     <a class="nav-link" href="{{ route('login') }}">
                          <i class="fas fa-key opacity-6 text-dark me-1"></i>
                          Login
                      </a>
