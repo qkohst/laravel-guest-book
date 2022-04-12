@@ -71,8 +71,10 @@
   </footer>
   <!-- End Footer  -->
 
-  <!--   Core JS Files   -->
+  <!-- Sweet Alert -->
+  @include('sweetalert::alert')
 
+  <!--   Core JS Files   -->
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap.min.js"></script>
   <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>

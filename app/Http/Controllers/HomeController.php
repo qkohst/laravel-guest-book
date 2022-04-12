@@ -67,8 +67,7 @@ class HomeController extends Controller
                 'city_code' => $request->city,
             ]);
             $guest_book->save();
-            // return redirect('/')->with('toast_success', 'Data berhasil disimpan');
-            return redirect('/');
+            return redirect('/')->with('toast_success', 'GuestBook created successfully');
         }
     }
 
