@@ -41,20 +41,23 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto text-center mb-2 mt-2">
-          <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
-            <span class="text-lg fab fa-dribbble"></span>
+          <a href="https://web.facebook.com/qkohst" target="_blank" class="text-secondary me-xl-4 me-4">
+            <span class="text-lg fab fa-facebook"></span>
           </a>
-          <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
-            <span class="text-lg fab fa-twitter"></span>
-          </a>
-          <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
+          <a href="https://www.instagram.com/qkoh_st/" target="_blank" class="text-secondary me-xl-4 me-4">
             <span class="text-lg fab fa-instagram"></span>
           </a>
-          <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
-            <span class="text-lg fab fa-pinterest"></span>
+          <a href="https://twitter.com/qkohst" target="_blank" class="text-secondary me-xl-4 me-4">
+            <span class="text-lg fab fa-twitter"></span>
           </a>
-          <a href="javascript:;" target="_blank" class="text-secondary">
+          <a href="https://www.youtube.com/channel/UCHO5t3O1satYKfGnlxGDVsg/videos" target="_blank" class="text-secondary me-xl-4 me-4">
+            <span class="text-lg fab fa-youtube"></span>
+          </a>
+          <a href="https://github.com/qkohst" target="_blank" class="text-secondary me-xl-4 me-4">
             <span class="text-lg fab fa-github"></span>
+          </a>
+          <a href="https://www.linkedin.com/in/kukoh-santoso-87674217a" target="_blank" class="text-secondary">
+            <span class="text-lg fab fa-linkedin"></span>
           </a>
         </div>
       </div>
