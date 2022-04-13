@@ -24,4 +24,7 @@ Route::get('city/{code}', 'GetCityController@city');
 Route::group(['middleware' => ['auth']], function () {
     Route::get('logout', 'AuthController@logout')->name('logout');
     Route::get('dashboard', 'DashboardController@index')->name('dashboard');
+    Route::resource('guestbooks', 'GuestBooksController', [
+        'except' => ['show']
+    ]);
 });
