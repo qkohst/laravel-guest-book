@@ -112,7 +112,6 @@ class GuestBooksController extends Controller
      */
     public function update(Request $request, $id)
     {
-        // dd($request->all());
         $guest_book = GuestBook::findorfail($id);
         $validator = Validator::make($request->all(), [
             'first_name' => 'required|min:2|max:25',
