@@ -1,4 +1,70 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<div id="top"></div>
+
+<h1>
+Laravel GuestBooks
+</h1>
+<p>
+    Guestbook is a simple project for Guestbook Management App
+</p>
+
+https://user-images.githubusercontent.com/57386598/163422676-a062ef86-51b6-4f46-9ad9-84802af9fffc.mp4
+
+## Installation 
+To run the application on your computer, please follow the following command : 
+
+1. Clone the repo
+   ```sh
+   $ git clone https://github.com/qkohst/laravel-guest-book.git
+   ```
+2. Change directory in project which already clone
+   ```sh
+   $ cd laravel-guest-book
+   ```
+3. Install Composer packages
+   ```sh
+   $ composer install
+   ```
+4. Cerate database on your computer
+5. Create a copy of your .env file 
+   ```sh
+   $ cp .env.example .env
+   ```
+6. In the .env file, add database information to allow Laravel to connect to the database
+   ```sh
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE={database-name}
+   DB_USERNAME={username-database}
+   DB_PASSWORD={password-database}
+   ```
+7. Generate an app encryption key
+   ```sh
+   $ php artisan key:generate
+   ```
+8. Migrate the database
+   ```sh
+   $ php artisan migrate
+   ```
+9. Seed the database
+   ```sh
+   $ php artisan db:seed
+   ```
+10. Running project
+   ```sh
+   $ php artisan serve
+   ```
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+## Admin Credential in Seeder
+> Email : admin@mail.com
+> Password : 123456
+
+
+<p align="center">
+    <a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="300"></a>
+</p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
